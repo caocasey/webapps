@@ -1,0 +1,63 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About NGSI-9 Server</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="StyleSheet" href="/ngsi9/CSS/background.css" type="text/css">        
+    </head>
+    <body>                    
+        <br />            
+        <div><header>
+                <span style="text-align:center;font-weight: normal;font-family: Segoe UI;font-size: x-large;">IoT Discovery NGSI-9 Server v3.2.3</span>
+                <br />                
+            </header>
+        </div>        
+        <div>
+            <ul style="line-height:2.0; font-family: Segoe UI;">
+                <li>Standard Operations:                
+                    <ul style="line-height:2.0; font-family: Segoe UI;">
+                        <li type="circle">URL: http://{serverRoot}/ngsi9/registerContext - Method: POST - Payload: registerContextRequest</li>          
+                        <li type="circle">URL: http://{serverRoot}/ngsi9/discoverContextAvailability - Method: POST - Payload: discoverContextAvailabilityRequest</li> 
+                        <li type="circle">URL: http://{serverRoot}/ngsi9/subscribeContextAvailability - Method: POST - Payload: subscribeContextAvailabilityRequest</li>                    
+                        <li type="circle">URL: http://{serverRoot}/ngsi9/updateContextAvailabilitySubscription - Method: POST - Payload: updateContextAvailabilitySubscriptionRequest</li>                    
+                        <li type="circle">URL: http://{serverRoot}/ngsi9/unsubscribeContextAvailability - Method: POST - Payload: unsubscribeContextAvailabilityRequest</li>                                                                                 
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul style="line-height:2.0; font-family: Segoe UI;">
+                <li>Convenience Operations:                
+                    <ul style="line-height:2.0; font-family: Segoe UI;">
+                        <li type="circle">URL: http://{serverRoot}/ngsi9/contextEntities/{EntityID} - Method: POST - Payload: registerContextRequest</li>          
+                        <li type="circle">URL: http://{serverRoot}/ngsi9/contextEntities/{EntityID} - Method: GET</li> 
+                        <li type="circle">URL: http://{serverRoot}/ngsi9/contextEntities/{EntityID}/attributes - Method: GET</li>                    
+                        <li type="circle">URL: http://{serverRoot}/ngsi9/contextEntities/{EntityID}/attributes/attributeName - Method: GET</li>                    
+                        <li type="circle">URL: http://{serverRoot}/ngsi9/contextEntities/{EntityID}/attributeDomains/{attributeDomainName} - Method: GET</li>                    
+                        <li type="circle">URL: http://{serverRoot}/ngsi9/contextEntityTypes/{typeName} - Method: GET</li>                                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <header>
+                <span style="text-align:center;font-weight: normal;font-family: Segoe UI;font-size: xx-large;">CONTACT</span>
+            </header>
+        </div>            
+        <div>
+            <br />            
+            <header>
+                <span style="text-align:center;font-weight: normal;font-family: Segoe UI;font-size: large;">Tarek Elsaleh</span>
+            </header>
+            <ul style="line-height:2.0; font-family: Segoe UI;">                                    
+                <li>Email: t.elsaleh AT surrey DOT ac DOT uk</li>
+                <li>Centre of Communication Systems Research, University of Surrey, Guildford, Surrey GU2 7XH</li>                
+            </ul>
+        </div>         
+    </body>
+</html>
